@@ -28,5 +28,14 @@ namespace Exercises
             int result = firstNumber > secondNumber ? firstNumber : secondNumber;
             Console.WriteLine("bigger number was: " + result);
         }
+
+        public static void DetectPortraitOrLandscape()
+        {
+            Console.WriteLine("Enter first number:");
+            int height = int.Parse(Console.ReadLine()!);
+            Console.WriteLine("Enter second number:");
+            int width = int.Parse(Console.ReadLine()!);
+            Console.WriteLine(height >= width ? "Portrait" : "Landscape");
+        }
     }
 }
