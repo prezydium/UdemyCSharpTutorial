@@ -18,5 +18,15 @@ namespace Exercises
                 Console.WriteLine("Invalid!");
             }
         }
+
+        public static void Compare()
+        {
+            Console.WriteLine("Enter first number:");
+            int firstNumber = int.Parse(Console.ReadLine()!);
+            Console.WriteLine("Enter second number:");
+            int secondNumber = int.Parse(Console.ReadLine()!);
+            int result = firstNumber > secondNumber ? firstNumber : secondNumber;
+            Console.WriteLine("bigger number was: " + result);
+        }
     }
 }

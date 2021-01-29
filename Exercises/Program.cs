@@ -6,7 +6,8 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            ControlFlow.CheckNumber();
+          //  ControlFlow.CheckNumber();
+          ControlFlow.Compare();
         }
     }
 }
