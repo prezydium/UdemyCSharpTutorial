@@ -8,7 +8,8 @@ namespace Exercises
         {
           // ControlFlow.CheckNumber();
           // ControlFlow.Compare();
-          ControlFlow.DetectPortraitOrLandscape();
+         // ControlFlow.DetectPortraitOrLandscape();
+         ControlFlow.DetectSpeedLimit();
         }
     }
 }
