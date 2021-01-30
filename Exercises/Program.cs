@@ -6,10 +6,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-          // ControlFlow.CheckNumber();
-          // ControlFlow.Compare();
-         // ControlFlow.DetectPortraitOrLandscape();
-         ControlFlow.DetectSpeedLimit();
+            ControlFlowTwo.CountWithExitOption();
         }
     }
 }

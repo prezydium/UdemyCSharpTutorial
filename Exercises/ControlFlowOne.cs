@@ -2,7 +2,7 @@
 
 namespace Exercises
 {
-    public class ControlFlow
+    public class ControlFlowOne
     {
         public static void CheckNumber()
         {
