@@ -48,5 +48,31 @@ namespace Exercises
 
             Console.WriteLine("Factorial of {0} is {1}", number, result);
         }
+
+        public static void GuessRandomNumber()
+        {
+            int chances = 3;
+            int randomNumber = new Random().Next(10) + 1;
+            bool success = false;
+            Console.WriteLine("Guess random number. [debug:{0}]", randomNumber);
+            while (chances > 0 && !success)
+            {
+                int guessedNumber = int.Parse(Console.ReadLine());
+                if (guessedNumber == randomNumber)
+                {
+                    success = true;
+                }
+                else
+                {
+                    chances--;
+                }
+            }
+
+            if (success)
+            {
+                Console.WriteLine("YOU WON!");
+            }
+            
+        }
     }
 }
