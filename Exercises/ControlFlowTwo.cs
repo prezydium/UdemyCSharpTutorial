@@ -12,8 +12,9 @@ namespace Exercises
                 if (i % 3 == 0)
                 {
                     count++;
-                } 
+                }
             }
+
             Console.WriteLine("there are {0} numbers divisible by 3", count);
         }
 
@@ -23,14 +24,29 @@ namespace Exercises
             while (true)
             {
                 Console.WriteLine("Enter number to add up or OK to exit");
-                 string input = Console.ReadLine();
+                string input = Console.ReadLine();
                 if (input.Equals("OK"))
                 {
                     break;
                 }
+
                 currentSum += int.Parse(input);
                 Console.WriteLine("Current sum: " + currentSum);
             }
+        }
+
+        public static void CountAndDisplayFactorial()
+        {
+            Console.WriteLine("Enter number to have factorial calculated");
+            string input = Console.ReadLine();
+            int number = int.Parse(input);
+            int result = 1;
+            for (int i = 1; i <= number; i++)
+            {
+                result *= i;
+            }
+
+            Console.WriteLine("Factorial of {0} is {1}", number, result);
         }
     }
 }
