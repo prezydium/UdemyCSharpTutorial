@@ -72,7 +72,31 @@ namespace Exercises
             {
                 Console.WriteLine("YOU WON!");
             }
-            
+        }
+
+        public static void GetHighest()
+        {
+            Console.WriteLine("Enter comma separated integers to get the highest");
+            string input = Console.ReadLine();
+            string[] splitInput = input.Split(",");
+            if (splitInput.Length < 1)
+            {
+                throw new Exception("Empty input");
+            }
+
+            int[] numbers = new int[splitInput.Length];
+            for (int i = 0; i < splitInput.Length; i++)
+            {
+                numbers[i] = int.Parse(splitInput[i]);
+            }
+
+            int currentHighest = numbers[0];
+            foreach (int current in numbers)
+            {
+                currentHighest = (current > currentHighest) ? current : currentHighest;
+            }
+
+            Console.WriteLine("Highest was: " + currentHighest);
         }
     }
 }
