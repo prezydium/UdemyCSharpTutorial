@@ -6,7 +6,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            LikesCounter.CountLikes();
+            NameReverser.askForNameAndReverse();
         }
     }
 }
