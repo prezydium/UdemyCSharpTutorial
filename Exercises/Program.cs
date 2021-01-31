@@ -6,7 +6,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            NameReverser.askForNameAndReverse();
+            UniqueNumberDisplayer.displayUnique();
         }
     }
 }
