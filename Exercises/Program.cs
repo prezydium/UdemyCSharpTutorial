@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Exercises.CollectionsExercises;
 
 namespace Exercises
 {
@@ -6,7 +6,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            ControlFlowTwo.GetHighest();
+            LikesCounter.CountLikes();
         }
     }
 }
