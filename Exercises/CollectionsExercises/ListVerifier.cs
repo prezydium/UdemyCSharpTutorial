@@ -18,7 +18,6 @@ namespace Exercises.CollectionsExercises
                 {
                     break;
                 }
-
                 Console.WriteLine("Need 5 or more, try again");
             }
             numbers.Sort();

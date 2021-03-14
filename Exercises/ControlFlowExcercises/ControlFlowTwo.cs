@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercises
+namespace Exercises.ControlFlowExcercises
 {
     public class ControlFlowTwo
     {
@@ -67,7 +67,6 @@ namespace Exercises
                     chances--;
                 }
             }
-
             if (success)
             {
                 Console.WriteLine("YOU WON!");
